@@ -92,3 +92,28 @@ The original project that proved this pipeline:
 - Character sheet format: `characters/johnny.md`
 - Motif tracking format: `notes/style-notes.md`
 - Beat map format: `outline.md`
+
+## Methodology
+
+This repo follows the ZiLin Command methodology. Canonical reference:
+[htu-governance/docs/METHODOLOGY/](https://github.com/zi007lin/htu-governance/tree/main/docs/METHODOLOGY)
+
+Onboarding compliance is governed by:
+[htu-governance/docs/ONBOARDING.md](https://github.com/zi007lin/htu-governance/blob/main/docs/ONBOARDING.md)
+
+## Issue spec convention
+
+All specs filed against this repo follow the filename pattern:
+
+    issues/YYYY-MM-DD__type__short-title.md
+
+Where `type` is one of: `feat`, `bug`, `spec`, `chore`, `refactor`, `ux`, `brand`, `docs`.
+
+Specs are scored at `zai.htu.io/app` before implementation. The scored
+variant lands at `issues/<original-filename>.scored.md`.
+
+## Dual control
+
+`zi007lin` authors PRs. `daniel-silvers` approves and merges. AI validation
+plus daniel-silvers approval is required to merge. Neither actor merges
+alone.
