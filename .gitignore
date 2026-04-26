@@ -45,3 +45,6 @@ uploads/
 # Generated audio
 exports/audio/
 *.mp3
+
+# Security
+*.pem
