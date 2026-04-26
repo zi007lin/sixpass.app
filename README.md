@@ -55,3 +55,19 @@ cd services/processor && pip install -r requirements.txt && uvicorn main:app --r
 ## License
 
 TBD
+
+## Legal triggers
+
+None as of this commit. sixpass.app has no production deployment, no end users, no payments, and processes no PII or PHI.
+
+The forthcoming checkout FEAT (Stripe Checkout integration) will trigger the following on its own merge:
+
+- **PCI-DSS SAQ-A** — Stripe-hosted Checkout keeps PAN out of sixpass.app servers; annual self-attestation required
+- **Consumer rights (EU/UK)** — distance-selling rules and 14-day cooling-off period
+- **Sales tax / VAT / GST** — Stripe Tax handles compute; registration responsibility ours
+- **Subscription auto-renewal disclosure** — California ARL, FTC ROSCA, EU directives
+- **Data retention** — order and invoice records, 7 years for tax purposes
+
+See [htu-legal](https://github.com/zi007lin/htu-legal) for canonical clauses and counsel-reviewed templates. ToS and Privacy Policy updates will accompany the checkout FEAT, not this CHORE.
+
+This section is required by the htu-governance onboarding procedure ([SPEC #3](https://github.com/zi007lin/htu-governance/issues/3), Gate 5).
